@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Wave Group of Companies</title>
+    <link rel="stylesheet" href="faq.css">
+    <link href="favicon.jpg" rel="shortcut icon" type="image">
+    <script src="scripts.js"></script>
+    <button class="menu-toggle">☰</button>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Wave Group of Companies</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="licence-agreement.html">Licence Agreement</a></li>
+                <li><a href="invest-in-our-company.html">Invest in Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="faq-search" placeholder="Search for answers..." onkeyup="searchFAQ()">
+        </div>
+
+        <!-- Accordion FAQ Section -->
+        <div class="accordion">
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleAnswer(this)">What is Wave Group of Companies?</button>
+                <div class="faq-answer">
+                    <p>Wave Group of Companies is a leading real estate developer specializing in residential and commercial properties. We provide top-notch services and quality designs to meet the needs of our clients.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleAnswer(this)">How can I buy a property from Wave Group?</button>
+                <div class="faq-answer">
+                    <p>You can purchase a property from us by contacting our sales team through our website or visiting our office. Our agents will assist you in finding the perfect property that suits your needs.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleAnswer(this)">What are the payment options available?</button>
+                <div class="faq-answer">
+                    <p>We offer a range of payment options, including mortgage plans, installments, and direct payments. Our sales team will provide detailed information based on your selected property.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleAnswer(this)">Do you offer property management services?</button>
+                <div class="faq-answer">
+                    <p>Yes, we offer property management services to help you maintain and manage your property. This includes tenant management, property maintenance, and ensuring everything is in working order.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleAnswer(this)">How can I schedule a site visit?</button>
+                <div class="faq-answer">
+                    <p>You can schedule a site visit by contacting us through the contact page or filling out the form on our website. Our team will coordinate with you to arrange a visit at your convenience.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleAnswer(this)">What should I know before purchasing a property?</button>
+                <div class="faq-answer">
+                    <p>Before purchasing a property, it's essential to consider factors such as location, budget, property type, and legal documentation. Our team is here to guide you through the entire buying process, ensuring that you are well-informed and confident in your decision.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Us for Further Queries -->
+        <div class="contact-info">
+            <h3>Still Have Questions?</h3>
+            <p>If you couldn't find the answer you're looking for, feel free to contact us directly. Our customer support team is here to help you with any queries you may have.</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:info@wavegroup.com">info@wavegroup.com</a></li>
+                <li><strong>Phone:</strong> +1 800 123 4567</li>
+                <li><strong>Visit Us:</strong> 123 Real Estate Lane, Suite 456, City, Country</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Wave Group of Companies. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Search & Accordion Toggle -->
+    <script>
+        function searchFAQ() {
+            var input, filter, faqItems, questions, i, txtValue;
+            input = document.getElementById('faq-search');
+            filter = input.value.toUpperCase();
+            faqItems = document.getElementsByClassName('faq-item');
+            for (i = 0; i < faqItems.length; i++) {
+                questions = faqItems[i].getElementsByClassName('faq-question')[0];
+                txtValue = questions.textContent || questions.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    faqItems[i].style.display = "";
+                } else {
+                    faqItems[i].style.display = "none";
+                }
+            }
+        }
+
+        function toggleAnswer(element) {
+            var answer = element.nextElementSibling;
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>

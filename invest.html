@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest With Us - Wave Group of Companies</title>
+    <link rel="stylesheet" href="invest.css">
+    <link href="favicon.jpg" rel="shortcut icon" type="image">
+    <script src="scripts.js"></script>
+    <button class="menu-toggle">☰</button>
+    <form name="investment-form" action="submit_investment_form.html" method="POST">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Wave Group of Companies</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="licence-agreement.html">Licence Agreement</a></li>
+                <li><a href="invest.html">Invest in Our Company</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Invest with Us Section -->
+    <section class="invest">
+        <h2>Why Invest With Wave Group of Companies?</h2>
+        <p>Wave Group of Companies is a trusted and established real estate development company with a strong track record of delivering high-quality residential and commercial projects. By investing with us, you are making a smart and profitable choice.</p>
+
+        <h3>1. Investment Benefits</h3>
+        <ul>
+            <li><strong>Stable Returns:</strong> Our portfolio is diverse, and our projects have historically delivered stable and consistent returns to investors.</li>
+            <li><strong>Experienced Team:</strong> Our team consists of experienced professionals with decades of experience in real estate development, management, and marketing.</li>
+            <li><strong>Innovative Designs:</strong> We prioritize cutting-edge designs that align with modern living and business needs, ensuring value for money for investors.</li>
+            <li><strong>Secure Investment Opportunities:</strong> We ensure that all of our projects comply with regulatory standards, making your investment safe and secure.</li>
+        </ul>
+
+        <h3>2. Investment Plans</h3>
+        <div class="investment-plans">
+            <div class="plan">
+                <h4>Residential Projects</h4>
+                <p>Invest in the growing demand for residential properties. Our residential projects are located in prime locations with strong growth potential. Starting at just $100,000.</p>
+            </div>
+            <div class="plan">
+                <h4>Commercial Properties</h4>
+                <p>For investors looking for higher returns, we offer opportunities in commercial real estate. Our commercial properties are located in high-demand areas with businesses looking for rental space. Starting at $500,000.</p>
+            </div>
+            <div class="plan">
+                <h4>Mixed-Use Developments</h4>
+                <p>Our mixed-use developments combine residential and commercial spaces, offering diverse investment opportunities for long-term gains. Starting at $750,000.</p>
+            </div>
+        </div>
+
+        <h3>3. Success Stories</h3>
+        <div class="success-stories">
+            <div class="story">
+                <h4>John D. - Residential Investment</h4>
+                <p>"Investing with Wave Group has been one of the best decisions I've made. My residential property investment has yielded great returns, and I’m now looking to expand my portfolio with them."</p>
+            </div>
+            <div class="story">
+                <h4>Sarah M. - Commercial Investment</h4>
+                <p>"Wave Group provided a detailed investment plan for my commercial real estate portfolio, and I saw a 15% increase in returns within the first year. Highly recommend their team!"</p>
+            </div>
+        </div>
+
+        <h3>4. How to Get Started</h3>
+        <p>Getting started with your investment is simple. Fill out the contact form below or get in touch with one of our investment consultants to discuss your goals and how we can help you achieve them.</p>
+
+        <!-- Investment Contact Form -->
+        <div class="investment-contact-form">
+            <h4>Contact an Investment Consultant</h4>
+            <form action="submit_investment_form.html" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="investment-amount">Investment Amount (in $):</label>
+                <input type="number" id="investment-amount" name="investment-amount" required>
+
+                <label for="interest">Type of Investment:</label>
+                <select id="interest" name="interest">
+                    <option value="residential">Residential Projects</option>
+                    <option value="commercial">Commercial Properties</option>
+                    <option value="mixed-use">Mixed-Use Developments</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Wave Group of Companies. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
